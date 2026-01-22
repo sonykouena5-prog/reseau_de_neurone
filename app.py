@@ -27,7 +27,7 @@ cost_functions = {
 
 st.set_page_config(page_title="Réseau de neurones interactif", layout="wide")
 st.title("🧠 Laboratoire interactif de réseaux de neurones")
-
+0
 # --- Configuration ---
 st.sidebar.header("⚙️ Configuration du réseau")
 n_input = st.sidebar.slider("Neurones en entrée", 1, 5, 3)
@@ -38,7 +38,7 @@ mode = st.sidebar.radio("Mode de configuration :", ["Manuel", "Aléatoire"])
 seed = st.sidebar.number_input("Graine aléatoire (si aléatoire)", value=42)
 np.random.seed(seed)
 
-st.sidebar.header("Realiser par # Sony Tchouaou # ")
+st.sidebar.header("Realiser par # dSony Tchouaou # ")
 
 # Valeurs d’entrée
 if mode == "Manuel":
