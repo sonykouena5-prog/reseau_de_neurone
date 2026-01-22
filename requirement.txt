@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 streamlit>=1.30.0
 numpy>=1.24.0
 matplotlib>=3.5.0
 networkx>=2.8.0
+=======
+streamlit>=1.30.0
+numpy>=1.24.0
+matplotlib>=3.5.0
+networkx>=2.8.0
+
+
+
+>>>>>>> 4ef29600979097ddf5d83fcb3e3cbef7ebd4d080
