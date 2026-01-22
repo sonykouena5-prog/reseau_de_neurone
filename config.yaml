@@ -1,0 +1,11 @@
+credentials:
+  usernames:
+    sony:
+      name: Sony
+      password: '$2b$12$QhX9zvQkWcQkYQkWcQkYQkWcQkYQkWcQkYQkWcQkYQkWcQkYQkWcQk'
+      email: sony@example.com
+
+cookie:
+  name: app_home
+  key: abcdef
+  expiry_days: 1
