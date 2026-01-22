@@ -39,7 +39,7 @@ mode = st.sidebar.radio("Mode de configuration :", ["Manuel", "Aléatoire"])
 seed = st.sidebar.number_input("Graine aléatoire (si aléatoire)", value=42)
 np.random.seed(seed)
 
-st.sidebar.header("Realiser par # dSony Tchouaou # ")
+st.sidebar.header("Realiser par Sony Tchouaou")
 
 # Valeurs d’entrée
 if mode == "Manuel":
