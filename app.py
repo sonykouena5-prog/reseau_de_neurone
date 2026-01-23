@@ -168,7 +168,7 @@ if 'Y' in locals():
     axes[-1].legend()
 
 st.pyplot(fig)
-=======
+
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
