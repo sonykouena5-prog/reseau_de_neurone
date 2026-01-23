@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
@@ -31,6 +31,7 @@ st.title("🧠 Laboratoire interactif de réseaux de neurones")
 0
 # --- Configuration ---
 st.sidebar.header("⚙️ Configuration du réseau")
+
 n_input = st.sidebar.slider("Neurones en entrée", 1, 5, 3)
 n_hidden_layers = st.sidebar.slider("Couches cachées", 1, 3, 1)
 n_output = st.sidebar.slider("Neurones en sortie", 1, 5, 2)
@@ -336,4 +337,4 @@ if 'Y' in locals():
     axes[-1].legend()
 
 st.pyplot(fig)
->>>>>>> 4ef29600979097ddf5d83fcb3e3cbef7ebd4d080
+
