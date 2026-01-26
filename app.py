@@ -5,17 +5,47 @@ import matplotlib.pyplot as plt
 import networkx as nx
 
 # --- Fonctions d’activation ---
-def relu(x): return np.maximum(0, x)
-def sigmoid(x): return 1 / (1 + np.exp(-x))
-def tanh(x): return np.tanh(x)
-def softmax(x): exp_x = np.exp(x - np.max(x)); return exp_x / exp_x.sum()
+def relu(x): 
+    return np.maximum(0, x)
 
+def sigmoid(x): 
+    return 1 / (1 + np.exp(-x))
+
+def tanh(x): 
+    return np.tanh(x)
+
+def softmax(x): 
+    exp_x = np.exp(x - np.max(x)) 
+    return exp_x / exp_x.sum()
+
+def linear(x): 
+    return x
+
+def leaky_relu(x, alpha=0.01): 
+    return np.where(x > 0, x, alpha * x)
+
+def elu(x, alpha=1.0): 
+    return np.where(x >= 0, x, alpha * (np.exp(x) - 1))
+
+def swish(x): 
+    return x * sigmoid(x)
+
+def gelu(x): 
+    return 0.5 * x * (1 + np.tanh(np.sqrt(2/np.pi) * (x + 0.044715 * np.power(x, 3))))
+
+# Dictionnaire des activations
 activation_functions = {
     "ReLU": relu,
     "Sigmoïde": sigmoid,
     "Tanh": tanh,
-    "Softmax": softmax
+    "Softmax": softmax,
+    "Linéaire": linear,
+    "Leaky ReLU": leaky_relu,
+    "ELU": elu,
+    "Swish": swish,
+    "GELU": gelu
 }
+
 
 # --- Fonctions de coût ---
 def mse(y_true, y_pred): return np.mean((y_true - y_pred)**2)
